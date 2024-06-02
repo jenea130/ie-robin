@@ -1,5 +1,5 @@
 /*
-Theme Name: bs-vite
+Theme Name: ie-robin
 Theme URI: http://underscores.me/
 Description: Wordpress Theme rapid development
 Author: anonymous
@@ -8,3 +8,24 @@ Tested up to: 6.0.2
 Requires PHP: 7.4
 Version: 0.4
 */
+
+@font-face {
+    font-family: 'Sen';
+    src: local('Sen Bold'), local('Sen-Bold'),
+        url('assets/fonts/Sen-Bold.woff2') format('woff2'),
+        url('assets/fonts/Sen-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sen';
+    src: local('Sen Regular'), local('Sen-Regular'),
+        url('assets/fonts/Sen-Regular.woff2') format('woff2'),
+        url('assets/fonts/Sen-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
