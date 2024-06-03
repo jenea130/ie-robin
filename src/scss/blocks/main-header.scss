@@ -1,6 +1,9 @@
 .main-header {
   position: relative;
   background: #181823;
+  @media screen and (max-width: 768px) {
+    background: #000;
+  }
   &__block {
     position: absolute;
     top: 0;
@@ -9,9 +12,6 @@
     height: 9rem;
     background: #000;
     z-index: 1;
-    @media screen and (max-width: 768px) {
-      z-index: 3000;
-    }
   }
   &__wrap {
     height: 9rem;
@@ -21,7 +21,6 @@
   }
   .logo {
     position: relative;
-    left: -1.5rem;
     height: 2.4rem;
     z-index: 2;
     @media screen and (max-width: 768px) {

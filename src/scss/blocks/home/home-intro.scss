@@ -3,6 +3,13 @@
   height: 81.4rem;
   margin-top: -1px;
   background: #181823;
+  @media screen and (max-width: 768px) {
+    background: #000;
+  }
+  @media screen and (max-width: 576px) {
+    height: auto;
+    padding-bottom: 4rem;
+  }
   &__img {
     position: absolute;
     top: 10.2%;
@@ -11,21 +18,56 @@
     height: 83%;
     object-fit: cover;
     z-index: 1;
+    @media screen and (max-width: 576px) {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-bottom: 3rem;
+      box-shadow: inset 10rem 0 25px rgba(101, 114, 126, 50),
+        inset 0 0 25px rgba(140, 150, 170, 50), inset 0 0 25px rgb(83, 94, 104),
+        inset 0 0 25px rgb(86, 96, 106);
+    }
   }
   &__content {
     position: absolute;
     top: 23.3rem;
     right: 3.2rem;
-    width: 51.8%;
+    width: 53.8%;
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      max-width: 68rem;
+    }
+    @media screen and (max-width: 768px) {
+      top: 16rem;
+    }
+    @media screen and (max-width: 576px) {
+      position: static;
+      width: auto;
+      padding: 0 2rem;
+    }
   }
   &__title {
     margin-bottom: 3.3rem;
     font-weight: 700;
     font-size: 7.8rem;
-    line-height: 1.25;  
+    line-height: 1.25;
     letter-spacing: 1.7px;
     color: #fff;
+    @media screen and (max-width: 1200px) {
+      font-size: 7.4rem;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 5.8rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 5.6rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 3.4rem;
+    }
+    & strong {
+      color: #8b8b91;
+    }
   }
   &__text {
     font-family: var(--font);
