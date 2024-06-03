@@ -1,4 +1,17 @@
 .home-intro {
-  &__title{}
+  position: relative;
+  height: 81.4rem;
+  margin-top: -1px;
+  background: #181823;
+  &__img {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0;
+   width: 52%;
+   height: 80%;
+   object-fit: cover; 
+  }
+  &__title {
+  }
 }
-

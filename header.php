@@ -16,10 +16,9 @@
     $logo = $header['logo'];
     ?>
     <header class="main-header">
-
+    <div class="main-header__block"></div>
       <div class="container">
         <div class="main-header__wrap">
-          <div class="main-header__logo">
             <div class="logo">
               <?php if ($logo) : ?>
                 <?php if (is_front_page()) : ?>
@@ -31,7 +30,6 @@
                 <?php endif; ?>
               <?php endif; ?>
             </div>
-          </div>
           <?php wp_nav_menu([
             'theme_location'  => 'header',
             'menu'            => '',
