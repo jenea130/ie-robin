@@ -20,8 +20,7 @@ body {
   height: 100%;
   position: relative;
   margin: 0;
-  padding-top: 97px;
-  font-family: var(--font-1);
+  font-family: var(--font);
   font-size: 1.8rem;
   color: var(--text-color);
   background: white;
@@ -86,7 +85,7 @@ p {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1400px;
+  max-width: 1296px;
 }
 
 input[type="submit"]:disabled {
@@ -113,6 +112,8 @@ button::-moz-focus-inner {
 }
 
 .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
   min-height: 100%;
   display: flex;
