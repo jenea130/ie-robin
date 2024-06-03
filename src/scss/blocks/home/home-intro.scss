@@ -4,14 +4,34 @@
   margin-top: -1px;
   background: #181823;
   &__img {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   left: 0;
-   width: 52%;
-   height: 80%;
-   object-fit: cover; 
+    position: absolute;
+    top: 10.2%;
+    left: 0;
+    width: 52%;
+    height: 83%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &__content {
+    position: absolute;
+    top: 23.3rem;
+    right: 3.2rem;
+    width: 51.8%;
+    z-index: 2;
   }
   &__title {
+    margin-bottom: 3.3rem;
+    font-weight: 700;
+    font-size: 7.8rem;
+    line-height: 1.25;  
+    letter-spacing: 1.7px;
+    color: #fff;
+  }
+  &__text {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #fff;
   }
 }

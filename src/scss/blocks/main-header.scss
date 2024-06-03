@@ -5,8 +5,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 40%;
-    height: 8.8rem;
+    width: 37.5%;
+    height: 9rem;
     background: #000;
     z-index: 1;
     @media screen and (max-width: 768px) {
@@ -14,13 +14,14 @@
     }
   }
   &__wrap {
-    height: 8.8rem;
+    height: 9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .logo {
     position: relative;
+    left: -1.5rem;
     height: 2.4rem;
     z-index: 2;
     @media screen and (max-width: 768px) {

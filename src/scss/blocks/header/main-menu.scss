@@ -15,7 +15,7 @@
   &.fixed {
     opacity: 1;
     & li {
-      padding: 2rem 2.4rem;
+      padding: 2rem 2rem;
       margin: 0.5rem 0;
     }
   }
@@ -23,7 +23,7 @@
   li {
     display: flex;
     align-items: center;
-    padding: 0 2.4rem;
+    padding: 0 2rem;
     color: white;
     cursor: pointer;
     transition: background .3s ease;
