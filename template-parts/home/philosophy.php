@@ -7,7 +7,6 @@ $link = $philosophy['link'];
 ?>
 
 <div class="philosophy">
-  <img src="<?php echo $image ?>" alt="" class="philosophy__img">
   <div class="container">
     <div class="philosophy__content">
       <h2 class="philosophy__title"><?php echo $title ?></h2>
@@ -15,4 +14,5 @@ $link = $philosophy['link'];
       <a href="#" class="philosophy__link"><?php echo $link ?></a>
     </div>
   </div>
+  <img src="<?php echo $image ?>" alt="" class="philosophy__img">
 </div>
