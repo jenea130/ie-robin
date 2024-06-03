@@ -19,10 +19,21 @@
   &__wrap {
     display: flex;
     margin: 0 -1.2rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__item {
     flex: 0 0 calc(100% / 3 - 2.4rem);
     margin: 0 1.2rem;
+    @media screen and (max-width: 768px) {
+      flex: 0 0 calc(100% / 2 - 2.4rem);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    &__item:not(:last-child) {
+      margin-bottom: 3rem;
+    }
   }
   &__number {
     font-weight: 400;
