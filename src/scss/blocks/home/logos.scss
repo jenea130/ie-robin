@@ -1,0 +1,23 @@
+.logos {
+  background: #000;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    flex: 1 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181823;
+    height: 14rem;
+    @media screen and (max-width: 768px) {
+      flex: 1 0 50%;
+    }
+  }
+  &__icon {
+    height: 2.9rem;
+  }
+}
