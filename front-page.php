@@ -11,5 +11,6 @@ get_header();
 <?php get_template_part('template-parts/home/philosophy'); ?>
 <?php get_template_part('template-parts/home/skillset'); ?>
 <?php get_template_part('template-parts/home/logos'); ?>
+<?php get_template_part('template-parts/home/projects'); ?>
 
 <?php get_footer(); ?>
