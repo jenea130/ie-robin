@@ -13,5 +13,6 @@ get_header();
 <?php get_template_part('template-parts/home/logos'); ?>
 <?php get_template_part('template-parts/home/projects'); ?>
 <?php get_template_part('template-parts/home/instagram'); ?>
+<?php get_template_part('template-parts/home/dribbble'); ?>
 
 <?php get_footer(); ?>
