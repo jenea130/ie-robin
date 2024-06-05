@@ -16,5 +16,6 @@ get_header();
 <?php get_template_part('template-parts/home/dribbble'); ?>
 <?php get_template_part('template-parts/home/about'); ?>
 <?php get_template_part('template-parts/home/photography'); ?>
+<?php get_template_part('template-parts/home/contact'); ?>
 
 <?php get_footer(); ?>

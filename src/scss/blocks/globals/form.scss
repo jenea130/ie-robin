@@ -1,0 +1,41 @@
+.form {
+  &__group {
+    margin-bottom: 4rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  &__input {
+    padding: 1.4rem 2rem 1.4rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #fff;
+    text-indent: 2rem;
+    background: var(--text-dark);
+    border: none;
+    outline: none;
+  }
+  textarea {
+    padding: 1.4rem 2rem 1.4rem 2rem;
+    width: 100%;
+    height: 10rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: var(--text-dark);
+    border: none;
+    outline: none;
+  }
+  button {
+    padding: 24px 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    background: #5221e6;
+    border: none;
+    outline: none;
+  }
+}

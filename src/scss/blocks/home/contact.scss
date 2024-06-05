@@ -1,0 +1,21 @@
+.contact {
+  padding: 12rem 0;
+  background: #000;
+  &__wrap {
+    display: flex;
+    column-gap: 5rem;
+    max-width: 84%;
+    margin: 0 auto;
+  }
+  &__content {
+  }
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    width: 50rem;
+  }
+  &__form {
+    flex: 1;
+  }
+}
