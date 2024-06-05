@@ -1,8 +1,11 @@
 .photography {
   padding: 12rem 0;
   background: #000;
+  @media screen and (max-width: 768px) {
+    padding: 9rem 0;
+  }
   @media screen and (max-width: 576px) {
-    padding: 6rem 0;
+    padding: 5rem 0;
   }
   &__title {
     margin-bottom: 2.4rem;

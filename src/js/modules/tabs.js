@@ -12,7 +12,7 @@ export default function tabs() {
       tabs_items[index].classList.add("active")
       setTimeout(() => {
         tabs_items[index].classList.add("show")
-      }, 200)
+      }, 300)
     })
   })
 

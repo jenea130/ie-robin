@@ -5,6 +5,6 @@ import tabs from "./modules/tabs"
 
 document.addEventListener("DOMContentLoaded", function () {
     mainMenu();
-    fixedHeader();
+    // fixedHeader();
     tabs();
 });
