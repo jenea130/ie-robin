@@ -9,17 +9,17 @@
     color: #fff;
   }
   &__input {
-    padding: 1.4rem 2rem 1.4rem 0;
+    padding: 1.4rem 2rem;
     width: 100%;
     font-size: 1.6rem;
     color: #fff;
-    text-indent: 2rem;
+    // text-indent: 2rem;
     background: var(--text-dark);
     border: none;
     outline: none;
   }
   textarea {
-    padding: 1.4rem 2rem 1.4rem 2rem;
+    padding: 1.4rem 2rem;
     width: 100%;
     height: 10rem;
     font-size: 1.6rem;
@@ -28,7 +28,7 @@
     border: none;
     outline: none;
   }
-  button {
+  input[type="submit"] {
     padding: 24px 32px;
     font-weight: 700;
     text-transform: uppercase;
@@ -37,5 +37,11 @@
     background: #5221e6;
     border: none;
     outline: none;
+    &:hover {
+      box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2);
+    }
+    @media screen and (max-width: 768px) {
+      padding: 18px 32px;
+    }
   }
 }

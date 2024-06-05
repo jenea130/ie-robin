@@ -14,19 +14,7 @@ $form = $contact['form'];
       </div>
       <div class="contact__form">
         <form action="" class="form">
-          <div class="form__group">
-            <label for="name">Name</label>
-            <input id="name" type="text" class="form__input">
-          </div>
-          <div class="form__group">
-            <label for="email">Email</label>
-            <input id="email" type="email" class="form__input">
-          </div>
-          <div class="form__group">
-            <label for="area">Message</label>
-            <textarea name="" id="area"></textarea>
-          </div>
-          <button>Let’s get started</button>
+          <?php echo do_shortcode($form) ?>
         </form>
       </div>
     </div>
