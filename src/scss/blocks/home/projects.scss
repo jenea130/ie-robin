@@ -80,11 +80,15 @@
     background: transparent;
     outline: none;
     border: 1px solid #5221e6;
+    transition: background .3s ease;
     @media screen and (max-width: 992px) {
       font-size: 1.4rem;
     }
     @media screen and (max-width: 768px) {
       display: none;
+    }
+    &:hover {
+      background: #5221e6;
     }
   }
 }
