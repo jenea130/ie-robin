@@ -89,12 +89,12 @@ function bsv_eccommerce_register_required_plugins()
     /* //   'name'             => 'AddToAny Share Buttons', */
     /* //   'slug'             => 'add-to-any', */
     /* // ), */
-    /* array( */
-    /*   'name' => 'Tiny Mc Advanced', */
-    /*   'slug' => 'tinymce-advanced', */
-    /*   'required' => true, */
-    /*   'force_activation' => true */
-    /* ), */
+    array( 
+      'name' => 'Tiny Mc Advanced', 
+      'slug' => 'tinymce-advanced', 
+      'required' => true, 
+      'force_activation' => true 
+    ), 
     /* //    array( */
     /* //      'name'             => 'WP-PageNavi', */
     /* //      'slug'             => 'wp-pagenavi', */

@@ -19,42 +19,18 @@ $items = $photography['items'];
         <?php endforeach; ?>
       </div>
       <div class="tabs__content">
-        <div class="tabs__item">
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo1.jpg" alt="">
+        <?php foreach ($items as $item) : ?>
+          <?php
+          $gallery = $item['gallery'];
+          ?>
+          <div class="tabs__item">
+            <?php foreach ($gallery as $image) : ?>
+              <div class="tabs__img">
+                <img src="<?php echo $image; ?>" alt="">
+              </div>
+            <?php endforeach; ?>
           </div>
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo2.jpg" alt="">
-          </div>
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo3.jpg" alt="">
-          </div>
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo4.jpg" alt="">
-          </div>
-        </div>
-        <div class="tabs__item">
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo3.jpg" alt="">
-          </div>
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo4.jpg" alt="">
-          </div>
-        </div>
-        <div class="tabs__item">
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo2.jpg" alt="">
-          </div>
-        </div>
-        <div class="tabs__item">
-
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo2.jpg" alt="">
-          </div>
-          <div class="tabs__img">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/i/photo3.jpg" alt="">
-          </div>
-        </div>
+        <?php endforeach; ?>
       </div>
     </div>
   </div>
