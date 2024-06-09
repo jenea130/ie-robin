@@ -3,20 +3,40 @@
   background: var(--text-dark);
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 4.6rem;
   }
   &__col:first-of-type {
     flex: 3;
+    @media screen and (max-width: 576px) {
+      flex: 1 0 100%;
+      margin-bottom: 4rem;
+    }
   }
   &__col {
     flex: 1;
   }
+  &__logo {
+    margin-bottom: 3.2rem;
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
   &__list {
     font-size: 1.6rem;
     line-height: 1.5;
     color: #fff;
     li:not(:last-of-type) {
       margin-bottom: 4rem;
+    }
+    a {
+      padding-bottom: 0.4rem;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
     }
   }
   &__copyright {
