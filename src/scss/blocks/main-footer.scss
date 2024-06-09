@@ -17,14 +17,25 @@
     flex: 1;
   }
   &__logo {
+    display: inline-block;
     margin-bottom: 3.2rem;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   &__socials {
     display: flex;
     align-items: center;
     gap: 1.6rem;
   }
-
+  &__icon {
+    display: block;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
   &__list {
     font-size: 1.6rem;
     line-height: 1.5;

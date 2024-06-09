@@ -22,9 +22,9 @@ $socials = $footer['socials'];
   <div class="container">
     <div class="main-footer__wrap">
       <div class="main-footer__col">
-        <div class="main-footer__logo">
+        <a href="#" class="main-footer__logo">
           <?php echo $logo ?>
-        </div>
+        </a>
         <ul class="main-footer__socials">
           <?php foreach ($socials as $item) : ?>
             <?php
@@ -32,11 +32,11 @@ $socials = $footer['socials'];
             $type = $item['type'];
             $icon_url = 'template-parts/icons/icon-' . $type;
             ?>
-          <li>
-            <a href="<?php echo $url ?>" target="_about">
-            <?php get_template_part($icon_url); ?>
-            </a>
-          </li>
+            <li>
+              <a class="main-footer__icon" href="<?php echo $url ?>" target="_blank">
+                <?php get_template_part($icon_url); ?>
+              </a>
+            </li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -81,7 +81,7 @@ $socials = $footer['socials'];
         ]); ?>
       </div>
     </div>
-    <span class="main-footer__copyright">Not Copyright 2020 • Robin Williams. Webflow cloneable</span>
+    <span class="main-footer__copyright">Not Copyright <?php echo date('Y') ?> • Robin Williams. Webflow cloneable</span>
   </div>
 
 </footer>

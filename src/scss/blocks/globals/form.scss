@@ -37,8 +37,10 @@
     background: #5221e6;
     border: none;
     outline: none;
+    cursor: pointer;
+    transition: all .3s;
     &:hover {
-      box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2);
+      box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3);
     }
     @media screen and (max-width: 768px) {
       padding: 18px 32px;
