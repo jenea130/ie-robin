@@ -43,6 +43,8 @@ if (!function_exists('ar_starter_setup')) :
 		register_nav_menus(
 			array(
 				'header' => esc_html__('Header', 'ie-robin'),
+				'footer-1' => esc_html__('Footer', 'ie-robin'),
+				'footer-2' => esc_html__('Footer', 'ie-robin'),
 			)
 		);
 

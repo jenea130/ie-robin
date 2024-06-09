@@ -12,18 +12,62 @@
 
 ?>
 
-<!--</?php $addTitle = get_field('main_footer', 'option')['address_title'] ?>
-</?php $address =  get_field('full_address', 'option') ?>
-</?php $phone = get_field('phone_number', 'option') ?>
-</?php $email = get_field('email', 'option') ?>
-</?php $fullName =  get_field('full_company_name', 'option') ?>
-</?php $shortName =  get_field('short_company_name', 'option') ?>
-</?php $vat = get_field('vat', 'option') ?>
-</?php $partnerUrl = get_field('partner_url', 'option') ?>
-</?php $partnerLogo = get_field('parnter_logo', 'option') ?>-->
+<?php
+$footer = get_field('footer', 'options');
+$logo = $footer['logo'];
+?>
 
 <footer class="main-footer">
-
+  <div class="container">
+    <div class="main-footer__wrap">
+      <div class="main-footer__col">
+        <div class="main-footer__logo">
+          <?php echo $logo ?>
+        </div>
+      </div>
+      <div class="main-footer__col">
+          <?php wp_nav_menu([
+            'theme_location'  => 'footer-1',
+            'menu'            => '',
+            'container'       => '',
+            'container_class' => '',
+            'container_id'    => '',
+            'menu_class'      => 'main-footer__list',
+            'menu_id'         => '',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => '',
+          ]); ?>
+      </div>
+      <div class="main-footer__col">
+          <?php wp_nav_menu([
+            'theme_location'  => 'footer-2',
+            'menu'            => '',
+            'container'       => '',
+            'container_class' => '',
+            'container_id'    => '',
+            'menu_class'      => 'main-footer__list',
+            'menu_id'         => '',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => '',
+          ]); ?>
+      </div>
+    </div>
+    <span class="main-footer__copyright">Not Copyright 2020 • Robin Williams. Webflow cloneable</span>
+  </div>
 
 </footer>
 </div>

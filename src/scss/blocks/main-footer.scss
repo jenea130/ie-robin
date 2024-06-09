@@ -1,2 +1,27 @@
 .main-footer {
+  padding: 8rem 0;
+  background: var(--text-dark);
+  &__wrap {
+    display: flex;
+    margin-bottom: 4.6rem;
+  }
+  &__col:first-of-type {
+    flex: 3;
+  }
+  &__col {
+    flex: 1;
+  }
+  &__list {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #fff;
+    li:not(:last-of-type) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__copyright {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #8491a0;
+  }
 }
