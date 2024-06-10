@@ -6,7 +6,7 @@ $button_text = $projects['button_text'];
 $items = $projects['items'];
 ?>
 
-<div class="projects">
+<div class="projects" id="work">
   <div class="container">
     <div class="projects__label label"><?php echo $label ?></div>
     <h2 class="projects__title title"><?php echo $title ?></h2>

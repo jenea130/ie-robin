@@ -10,10 +10,12 @@
     height: 100%;
     background: #181823;
     opacity: 0;
+    pointer-events: none;
     z-index: 1000;
   }
   &.fixed {
     opacity: 1;
+    pointer-events: initial;
     & li {
       padding: 2rem 2rem;
       margin: 0.5rem 0;
@@ -27,8 +29,9 @@
     color: white;
     cursor: pointer;
     transition: background .3s ease;
-    &:hover {
-      background: #000;
+    &:hover,
+    &.current-menu-item {
+      background: #5221e6;
     }
   }
 }

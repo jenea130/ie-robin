@@ -5,7 +5,7 @@ $label = $experience['label'];
 $items = $experience['items'];
 ?>
 
-<div class="experience">
+<div class="experience" id="experience">
   <div class="container">
     <div class="experience__label"><?php echo $label; ?></div>
     <h2 class="experience__title"><?php echo $title ?></h2>

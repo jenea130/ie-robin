@@ -5,7 +5,7 @@ $text = $contact['text'];
 $form = $contact['form'];
 ?>
 
-<div class="contact">
+<div class="contact" id="contact">
   <div class="container">
     <div class="contact__wrap">
       <div class="contact__content">

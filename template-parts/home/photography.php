@@ -5,7 +5,7 @@ $text = $photography['text'];
 $items = $photography['items'];
 ?>
 
-<div class="photography">
+<div class="photography" id="photography">
   <div class="container">
     <h2 class="photography__title title"><?php echo $title ?></h2>
     <div class="photography__text"><?php echo $text ?></div>
