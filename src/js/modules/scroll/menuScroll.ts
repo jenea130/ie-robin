@@ -83,27 +83,21 @@ export default function menuScroll() {
     ) {
       // scroll down
       header?.classList.add("hide");
+      header?.classList.remove("fixed");
       console.log("down");
     } else if (scrollPosition() < lastScroll && containFixed()) {
       // scroll up
       console.log("up");
       header?.classList.remove("hide");
-    } 
-     
+      header?.classList.add("fixed");
+    }
+
+    if (scrollPosition() < defaultOffset) {
+      header?.classList.remove("fixed");
+    }
     lastScroll = scrollPosition();
   });
 
-  // window.addEventListener("scroll", () => {
-  //   if (window.pageYOffset > 500) {
-  //     if (!header?.classList.contains("fixed")) {
-  //       header?.classList.add("fixed");
-  //     }
-  //   } else {
-  //     if (header?.classList.contains("fixed")) {
-  //       header?.classList.remove("fixed");
-  //     }
-  //   }
-  // });
 
   function clearActive() {
     menu_links.forEach((link: any) => {

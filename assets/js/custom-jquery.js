@@ -1,23 +1,6 @@
 jQuery(document).ready(function ($) {
   $(".tabs__img").magnificPopup({ type: "image" });
 
-  // Scroll window
-
-  // let header = $(".main-header");
-  // let scrollPrev = 0;
-  // let scrollToTop = 0;
-
-  // $(window).scroll(function () {
-  //   var scrolled = $(window).scrollTop();
-  //   if (scrolled > 100 && scrolled > scrollPrev) {
-  //     header.addClass("fixed");
-  //     scrollToTop = scrolled;
-  //   } else if (scrolled < scrollToTop - 250 || scrolled < 250) {
-  //     header.removeClass("fixed");
-  //   }
-  //   scrollPrev = scrolled;
-  // });
-
 
   $(".gallery__wrap").slick({
     slidesToShow: 4,
