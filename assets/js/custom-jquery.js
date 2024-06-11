@@ -1,4 +1,8 @@
 jQuery(document).ready(function ($) {
+
+  $('.tabs__img').magnificPopup({type:'image'});
+
+
   $('.gallery__wrap').slick({
     slidesToShow: 4,
     autoplay: true,
@@ -50,4 +54,8 @@ jQuery(document).ready(function ($) {
     js_referrer.setAttribute('href', expectedReferral);
     js_referrer.insertAdjacentHTML('afterbegin', img);
   }
+
+  
+
+
 });

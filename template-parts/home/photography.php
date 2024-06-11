@@ -25,9 +25,10 @@ $items = $photography['items'];
           ?>
           <div class="tabs__item">
             <?php foreach ($gallery as $image) : ?>
-              <div class="tabs__img">
+              
+              <a href="<?php echo $image ?>" class="tabs__img">
                 <img src="<?php echo $image; ?>" alt="">
-              </div>
+              </a>
             <?php endforeach; ?>
           </div>
         <?php endforeach; ?>
