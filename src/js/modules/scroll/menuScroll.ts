@@ -92,7 +92,7 @@ export default function menuScroll() {
       header?.classList.add("fixed");
     }
 
-    if (scrollPosition() < defaultOffset) {
+    if (scrollPosition() < 90) {
       header?.classList.remove("fixed");
     }
     lastScroll = scrollPosition();

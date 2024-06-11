@@ -6,13 +6,14 @@
   }
   &__wrap {
     display: flex;
+    align-items: flex-start;
     column-gap: 2.4rem;
     @media screen and (max-width: 768px) {
       display: block;
     }
   }
   &__col {
-    flex: 1;
+    flex: 0 0 48%;
   }
   &__content {
     max-width: 90%;
