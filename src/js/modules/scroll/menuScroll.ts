@@ -2,7 +2,7 @@ import { bodyUnlock } from "../functions";
 export default function menuScroll() {
   const is_home = document.querySelector("body.home");
   const menu_links = document.querySelectorAll("#js-main-menu a");
-  const header = document.querySelector('.main-header');
+  const header = document.querySelector(".main-header");
   menu_links.forEach((link) => {
     link.addEventListener("click", function (e: any) {
       e.preventDefault();
@@ -65,17 +65,46 @@ export default function menuScroll() {
       { passive: true }
     );
   }
+
+  // my scroll
+
+  let lastScroll = 0;
+  const defaultOffset = 500;
+
+  const scrollPosition = () =>
+    window.pageYOffset || document.documentElement.scrollTop;
+  const containFixed = () => header?.classList.contains("hide");
+
   window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 500) {
-      if (!header?.classList.contains("fixed")) {
-        header?.classList.add("fixed");
-      }
-    } else {
-      if (header?.classList.contains("fixed")) {
-        header?.classList.remove("fixed");
-      }
-    }
+    if (
+      scrollPosition() > lastScroll &&
+      !containFixed() &&
+      scrollPosition() > defaultOffset
+    ) {
+      // scroll down
+      header?.classList.add("hide");
+      console.log("down");
+    } else if (scrollPosition() < lastScroll && containFixed()) {
+      // scroll up
+      console.log("up");
+      header?.classList.remove("hide");
+    } 
+     
+    lastScroll = scrollPosition();
   });
+
+  // window.addEventListener("scroll", () => {
+  //   if (window.pageYOffset > 500) {
+  //     if (!header?.classList.contains("fixed")) {
+  //       header?.classList.add("fixed");
+  //     }
+  //   } else {
+  //     if (header?.classList.contains("fixed")) {
+  //       header?.classList.remove("fixed");
+  //     }
+  //   }
+  // });
+
   function clearActive() {
     menu_links.forEach((link: any) => {
       link.classList.remove("active");

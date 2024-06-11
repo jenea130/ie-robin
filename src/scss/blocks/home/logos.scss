@@ -13,11 +13,16 @@
     align-items: center;
     border: 1px solid #181823;
     height: 14rem;
+    svg {
+      height: 2.9rem;
+      fill: #8491a0;
+      transition: fill .3s ease;
+    }
+    &:hover svg {
+      fill: var(--accent);
+    }
     @media screen and (max-width: 768px) {
       flex: 1 0 50%;
     }
-  }
-  &__icon {
-    height: 2.9rem;
   }
 }
